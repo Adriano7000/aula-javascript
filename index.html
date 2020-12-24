@@ -5,11 +5,35 @@
         <meta charset="utf-8">
         <!--<script type="text/javascript" src="js/main.js"></script> -->
         <!--<script type="text/javascript" src="js/main_2.js"></script>-->
-        <script type="text/javascript" src="js/teste-conhecimento-1.js"></script>
+        <script type="text/javascript" src="js/main_4.js"></script>
 
     </head>
-    <body>
+    <body onload="load()">
        
         <h1>Hello World</h1>
+        <p id="teste"></p>
+        <button type="button" onclick="clique()">
+                Clique aqui.
+        </button>
+        <h3 id="ok"></h3>       
+        
+        <p id="outraPagina" onclick="outraPagina()"> Mude de pagina</p>
+        <p id="trocartexto" onmouseover="trocar(this)" onmouseout="voltar(this)"> Passe o mouse aqui.</p>
+        <p id="trocartexto2" onmouseover="trocar(this)" onmouseout="voltar(this)"> Passe o mouse aqui.</p>
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+
+
+        </select>
+
+
+
+        <script>
+            let a = "ok";
+            document.getElementById("teste").innerHTML = a;
+
+        </script>
     </body>
 </html>
